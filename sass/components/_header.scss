@@ -1,0 +1,143 @@
+/* Шапка */
+.header {
+    display: flex;
+    border-bottom: 1px solid #ececec;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    &__link {
+        display: inline-block;
+        margin-right: 93px;
+    
+        font-family: var(--secondary-fond);
+        color: var(--blue-text);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+    }
+
+    &__studio {
+        font-family: var(--secondary-fond);
+        color: var(--black-text);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+    }
+    &__list {
+        display: flex;
+    }
+
+    &__list &__item+&__item {
+        margin-left: 50px;
+    }
+
+    &__links:hover,
+    &__links:focus {
+        color: var(--blue-text);
+    
+    }
+    
+    &__list .current {
+        color: var(--blue-text);
+        position: relative;
+        padding-bottom: 32px;
+    
+    }
+
+    &__links {
+        font-family: var(--main-font);
+        color: var(--black-text);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        transition: color var(--anim-spb);
+    
+    }
+
+}
+
+.auth {
+    display: flex;
+    margin-left: auto;
+
+    &__icon {
+        margin-right: 10px;
+        fill: var(--grey-text);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        cursor: pointer;
+    
+        transition: fill var(--anim-spb);
+    
+    }
+
+    &__item:hover &__icon,
+    &__item:focus &__icon {
+        fill: #188ce8;
+    }
+    
+    &__icon:hover,
+    &__icon:focus {
+        color: var(--blue-text);
+        fill: var(--blue-text);
+    
+    }
+    
+    &__link {
+        font-family: var(--main-font);
+        color: var(--grey-text);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    
+        transition: color var(--anim-spb);
+    }
+    
+    &__link:hover,
+    &__link:focus {
+        color: var(--blue-text);
+    
+    
+    }
+}
+
+.letter:last-child {
+    margin-left: 30px;
+}
+
+.current::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: -2px;
+
+    width: 100%;
+    height: 4px;
+
+    border-radius: 2px;
+    background-color: var(--blue-text);
+}
