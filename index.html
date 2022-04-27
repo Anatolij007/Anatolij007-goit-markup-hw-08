@@ -24,10 +24,82 @@
     <!-- Шапка -->
     <header class="header">
       <div class="container header__container">
-        <nav class="nav">
-          <a class="nav__link" href="./index.html"
-            >Web<span class="nav__studio">Studio</span></a
+        <a class="header__link" href="./index.html"
+          >Web<span class="header__studio">Studio</span></a
+        >
+        <!-- Кнопка -->
+        <button class="menu-btn is-active" type="button" data-menu-button>
+          <svg
+            class="menu-btn__icon"
+            width="40"
+            height="40"
+            role="button"
+            aria-expanded="false"
+            aria-controls="menu-mobile"
+            aria-label="Кнопка открытия меню"
           >
+            <use
+              class="menu-btn__icon-open"
+              href="./images/icons.svg#menu40"
+            ></use>
+            <use
+              class="menu-btn__icon-close"
+              href="./images/icons.svg#close40"
+            ></use>
+          </svg>
+        </button>
+        <!-- Модалка для кнопки -->
+        <div class="mobile-menu" id="menu-mobile" data-menu>
+          <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a
+                  href="./index.html"
+                  class="mobile-menu__link mobile-menu__link--current"
+                  >Студия</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a href="./portfolio.html" class="mobile-menu__link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-contacts">
+            <ul class="mobile-contacts__list">
+              <li class="mobile-contacts__item">
+                <a href="tel:+380961111111" class="mobile-contacts__tel"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-contacts__item">
+                <a href="mailtoinfo@devstudio.com" class="mobile-contacts__mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-contacts__socials">
+              <li class="mobile-contacts__item">
+                <a href="" class="mobile-contacts__link">Instagram</a>
+              </li>
+              <li class="mobile-contacts__item">
+                <a href="" class="mobile-contacts__link">Twitter</a>
+              </li>
+              <li class="mobile-contacts__item">
+                <a href="" class="mobile-contacts__link">Facebook</a>
+              </li>
+              <li class="mobile-contacts__item">
+                <a href="" class="mobile-contacts__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Навигация для Десктопа -->
+        <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__links current" href="./index.html">Студия</a>
@@ -61,16 +133,16 @@
     </header>
     <!-- Основа -->
     <main>
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero__text">Эффективные решения для вашего бизнеса</h1>
           <button class="hero__button" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
-      </section>
+      </section> -->
       <!-- Модальное окно -->
-      <div class="backdrop is-hidden" data-modal>
+      <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="modal__btn" type="button" data-modal-close>
             <svg class="modal__close" width="18" height="18">
@@ -138,9 +210,9 @@
             <button type="submit" class="check__button">Отправить</button>
           </form>
         </div>
-      </div>
+      </div> -->
       <!-- Подробно -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 hidden>Перечень</h2>
           <ul class="peculiarities">
@@ -194,9 +266,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Наши занятия -->
-      <section class="section section-ours">
+      <!-- <section class="section section-ours">
         <div class="container">
           <h2 class="headline">Чем мы занимаемся</h2>
           <ul class="homework">
@@ -235,9 +307,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Наша команда -->
-      <section class="team section">
+      <!-- <section class="team section">
         <div class="container">
           <h2 class="team__dream">Наша команда</h2>
           <ul class="team__list">
@@ -407,9 +479,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Постоянные клиенты -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="clients">Постоянные клиенты</h2>
           <ul class="clients__list">
@@ -451,10 +523,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- Подвал -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__first">
           <a class="footer__link" href="./index.html"
@@ -529,7 +601,8 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

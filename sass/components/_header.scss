@@ -2,21 +2,28 @@
 .header {
     display: flex;
     border-bottom: 1px solid #ececec;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @media screen and (min-width:768px) {
+    
+        padding-top: 26px;
+        padding-bottom: 26px;
+    
+    }
+
+    @media screen and (min-width:1200px) {
+
     padding-top: 24px;
     padding-bottom: 25px;
+        
+    }
 
     &__container {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-
-}
-
-.nav {
-    display: flex;
-    align-items: center;
-    height: 100%;
 
     &__link {
         display: inline-block;
@@ -30,7 +37,7 @@
         line-height: 1.2;
         letter-spacing: 0.03em;
     }
-
+    
     &__studio {
         font-family: var(--secondary-fond);
         color: var(--black-text);
@@ -40,6 +47,24 @@
         line-height: 1.2;
         letter-spacing: 0.03em;
     }
+
+}
+
+.nav {
+
+    display: none;
+    align-items: center;
+    height: 100%;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+    }
+
+    
     &__list {
         display: flex;
     }
@@ -75,7 +100,7 @@
 }
 
 .auth {
-    display: flex;
+    display: none;
     margin-left: auto;
 
     &__icon {

@@ -1,0 +1,41 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    @media screen and (min-width:767px) {
+        display: none;
+    
+    }
+}
+
+.mobile-menu__nav {
+
+    // width: 100%;
+    // height: 100%;
+}
+
+// .mobile-menu__list {}
+
+// .mobile-menu__item {}
+
+// .mobile-menu__link {}
+
+// .mobile-menu__link--current {}
+
+// .mobile-contacts {}
+
+// .mobile-contacts__list {}
+
+// .mobile-contacts__item {}
+
+// .mobile-contacts__tel {}
+
+// .mobile-contacts__mail {}
+
+// .mobile-contacts__socials {}
+
+// .mobile-contacts__link {}
