@@ -36,7 +36,7 @@
             role="button"
             aria-expanded="false"
             aria-controls="menu-mobile"
-            aria-label="Кнопка открытия меню"
+            aria-label="Переключатель мобильного меню"
           >
             <use
               class="menu-btn__icon-open"
@@ -49,51 +49,47 @@
           </svg>
         </button>
         <!-- Модалка для кнопки -->
-        <div class="mobile-menu" id="menu-mobile" data-menu>
-          <nav class="mobile-menu__nav">
-            <ul class="mobile-menu__list">
-              <li class="mobile-menu__item">
-                <a
-                  href="./index.html"
-                  class="mobile-menu__link mobile-menu__link--current"
-                  >Студия</a
-                >
-              </li>
-              <li class="mobile-menu__item">
-                <a href="./portfolio.html" class="mobile-menu__link"
-                  >Портфолио</a
-                >
-              </li>
-              <li class="mobile-menu__item">
-                <a href="" class="mobile-menu__link">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="mobile-contacts">
-            <ul class="mobile-contacts__list">
-              <li class="mobile-contacts__item">
-                <a href="tel:+380961111111" class="mobile-contacts__tel"
+        <div class="menu-mobile" id="menu-mobile" data-menu>
+          <ul class="menu-mobile__list">
+            <li class="menu-mobile__item">
+              <a
+                href="./index.html"
+                class="menu-mobile__link menu-mobile__link--current"
+                >Студия</a
+              >
+            </li>
+            <li class="menu-mobile__item">
+              <a href="./portfolio.html" class="menu-mobile__link">Портфолио</a>
+            </li>
+            <li class="menu-mobile__item">
+              <a href="" class="menu-mobile__link">Контакты</a>
+            </li>
+          </ul>
+          <div class="menu-mobile__group">
+            <ul class="mobile__auth-nav">
+              <li class="mobile__auth__item">
+                <a href="tel:+380961111111" class="mobile__auth__tel"
                   >+38 096 111 11 11</a
                 >
               </li>
-              <li class="mobile-contacts__item">
-                <a href="mailtoinfo@devstudio.com" class="mobile-contacts__mail"
+              <li class="mobile__auth__item">
+                <a href="mailtoinfo@devstudio.com" class="mobile__auth__email"
                   >info@devstudio.com</a
                 >
               </li>
             </ul>
-            <ul class="mobile-contacts__socials">
-              <li class="mobile-contacts__item">
-                <a href="" class="mobile-contacts__link">Instagram</a>
+            <ul class="mobile__socials">
+              <li class="mobile__item">
+                <a href="" class="mobile__link">Instagram</a>
               </li>
-              <li class="mobile-contacts__item">
-                <a href="" class="mobile-contacts__link">Twitter</a>
+              <li class="mobile__item">
+                <a href="" class="mobile__link">Twitter</a>
               </li>
-              <li class="mobile-contacts__item">
-                <a href="" class="mobile-contacts__link">Facebook</a>
+              <li class="mobile__item">
+                <a href="" class="mobile__link">Facebook</a>
               </li>
-              <li class="mobile-contacts__item">
-                <a href="" class="mobile-contacts__link">LinkedIn</a>
+              <li class="mobile__item">
+                <a href="" class="mobile__link">LinkedIn</a>
               </li>
             </ul>
           </div>

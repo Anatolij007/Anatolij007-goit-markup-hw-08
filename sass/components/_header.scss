@@ -1,23 +1,11 @@
 /* Шапка */
 .header {
-    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
     border-bottom: 1px solid #ececec;
-    padding-top: 16px;
-    padding-bottom: 16px;
-
-    @media screen and (min-width:768px) {
-    
-        padding-top: 26px;
-        padding-bottom: 26px;
-    
-    }
-
-    @media screen and (min-width:1200px) {
-
-    padding-top: 24px;
-    padding-bottom: 25px;
-        
-    }
+    background-color: #fff;
+    z-index: 1;
 
     &__container {
         display: flex;
@@ -26,19 +14,76 @@
     }
 
     &__link {
+        padding-top: 16px;
+        padding-bottom: 16px;
         display: inline-block;
-        margin-right: 93px;
+        
     
         font-family: var(--secondary-fond);
         color: var(--blue-text);
         text-decoration: none;
         font-weight: 700;
-        font-size: 26px;
-        line-height: 1.2;
+        font-size: 24px;
+        line-height: 1.17;
         letter-spacing: 0.03em;
+
+
+        @media screen and (min-width:768px) {
+        
+            padding-top: 26px;
+            padding-bottom: 26px;
+
+            font-family: var(--secondary-fond);
+            color: var(--blue-text);
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 1.17;
+            letter-spacing: 0.03em;
+        
+        }
+
+        @media screen and (min-width:1200px) {
+        
+            padding-top: 24px;
+            padding-bottom: 25px;
+
+            font-family: var(--secondary-fond);
+            color: var(--blue-text);
+            margin-right: 93px;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1.2;
+            letter-spacing: 0.03em;
+        
+        }
+
+
+
     }
     
     &__studio {
+        font-family: var(--secondary-fond);
+        color: var(--black-text);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+
+        @media screen and (min-width:768px) {
+        
+        font-family: var(--secondary-fond);
+        color: var(--black-text);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        
+        }
+        
+        @media screen and (min-width:1200px) {
+        
         font-family: var(--secondary-fond);
         color: var(--black-text);
         text-decoration: none;
@@ -47,6 +92,7 @@
         line-height: 1.2;
         letter-spacing: 0.03em;
     }
+}
 
 }
 
