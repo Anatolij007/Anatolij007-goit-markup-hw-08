@@ -1,5 +1,4 @@
 .hero__button {
-    display: inline-block;
     text-align: center;
     border: 1px transparent;
     cursor: pointer;
@@ -13,12 +12,12 @@
     letter-spacing: 0.06em;
     border-radius: 4px;
     padding: 10px 32px;
-    min-width: 136px;
+    min-width: 200px;
 
     transition: background-color var(--anim-spb);
 
     &:hover,
-    &:focus, {
+    &:focus {
         color: var(--wgt-text);
         background-color: #188ce8;
 
