@@ -32,6 +32,7 @@
         
             padding-top: 26px;
             padding-bottom: 26px;
+            margin-right: 88px;
 
             font-family: var(--secondary-fond);
             color: var(--blue-text);
@@ -146,8 +147,32 @@
 }
 
 .auth {
-    display: none;
+
+    
     margin-left: auto;
+
+    @media screen and (max-width:767px) {
+        display: none;
+    
+    }
+
+    @media screen and (min-width:768px) {
+        display: block;
+    
+        
+    
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        margin-top: 21px;
+    
+    
+    }
+
+    @media screen and (min-width:1200px) {
+        display: inline-flex;
+    
+    }
 
     &__icon {
         margin-right: 10px;
@@ -195,10 +220,24 @@
     }
 }
 
-.letter:last-child {
-    margin-left: 30px;
+@media screen and (min-width:1200px) {
+
+    .letter:last-child {
+        margin-left: 30px;
+        
+    }
+    
 }
 
+
+@media screen and (max-width:1200px) {
+.auth__item {
+    
+    margin-bottom: 10px;
+
+}
+
+}
 .current::after {
     content: '';
     position: absolute;

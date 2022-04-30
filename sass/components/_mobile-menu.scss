@@ -35,7 +35,7 @@
     margin-bottom: 64px;
 }
 
-.mobile__auth__item {
+.mobile__auth-item {
     margin-bottom: 32px;
 
     font-family: 'Roboto';
@@ -45,14 +45,14 @@
     letter-spacing: 0.02em;
 }
 
-.mobile__auth__tel {
+.mobile__auth-tel {
     color: var(--blue-text);
     transition: var(--anim-spb);
 
     font-family: 'Roboto';
     
     font-weight: 500;
-    font-size: 34px;
+    font-size: 27px;
     line-height: 1.17;
     letter-spacing: 0.02em;
 
@@ -66,7 +66,7 @@
     }
 }
 
-.mobile__auth__email {
+.mobile__auth-email {
     
     color: var(--grey-text);
     transition: var(var(--anim-spb));

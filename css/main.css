@@ -291,7 +291,7 @@ img {
   margin-bottom: 64px;
 }
 
-.mobile__auth__item {
+.mobile__auth-item {
   margin-bottom: 32px;
   font-family: 'Roboto';
   font-weight: 500;
@@ -300,26 +300,26 @@ img {
   letter-spacing: 0.02em;
 }
 
-.mobile__auth__tel {
+.mobile__auth-tel {
   color: var(--blue-text);
   transition: var(--anim-spb);
   font-family: 'Roboto';
   font-weight: 500;
-  font-size: 34px;
+  font-size: 27px;
   line-height: 1.17;
   letter-spacing: 0.02em;
 }
 
-.mobile__auth__tel:hover, .mobile__auth__tel:focus {
+.mobile__auth-tel:hover, .mobile__auth-tel:focus {
   color: var(--blue-text);
 }
 
-.mobile__auth__email {
+.mobile__auth-email {
   color: var(--grey-text);
   transition: var(var(--anim-spb));
 }
 
-.mobile__auth__email:hover, .mobile__auth__email:focus {
+.mobile__auth-email:hover, .mobile__auth-email:focus {
   color: var(--blue-text);
 }
 
@@ -355,27 +355,22 @@ img {
 }
 
 .container {
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -412,6 +407,7 @@ img {
   .header__link {
     padding-top: 26px;
     padding-bottom: 26px;
+    margin-right: 88px;
     font-family: var(--secondary-fond);
     color: var(--blue-text);
     font-weight: 700;
@@ -516,8 +512,31 @@ img {
 }
 
 .auth {
-  display: none;
   margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .auth {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .auth {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .auth {
+    margin-top: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth {
+    display: inline-flex;
+  }
 }
 
 .auth__icon {
@@ -557,8 +576,16 @@ img {
   color: var(--blue-text);
 }
 
-.letter:last-child {
-  margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .letter:last-child {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .auth__item {
+    margin-bottom: 10px;
+  }
 }
 
 .current::after {
