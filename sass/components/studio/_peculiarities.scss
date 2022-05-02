@@ -1,11 +1,66 @@
 /* Подробно */
 .peculiarities {
-    display: flex;
-    justify-content: space-between;
+    
+    
+
+    @include mq (tablet-only) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    @include mq (desktop) {
+        display: flex;
+        justify-content: space-between;
+
+        
+    }
+
+
 
     &__item {
-        width: 270px;
+
+        @include mq (mobile-only) {
+
+        margin-bottom: 30px;
+
+
+        }
+
+        @include mq (tablet-only) {
+        max-width: 354px;
+        margin-top: 0;
+        margin-right: 15px;
+        margin-left: 15px;
+        }
+
+        
+        
+
+        @include mq (desktop) {
+            width: 270px;
+
+        }
     }
+
+    @include mq (mobile-only) {
+    
+        &__item:nth-child(4) {
+            margin-bottom: 0;
+        }
+    
+    }
+    @include mq (tablet-only) {
+        &__item:nth-child(-n+2) {
+        margin-bottom: 30px;
+    }
+    }
+
+    
+    
+
+    
     
     &__icon {
         display: flex;
@@ -45,4 +100,11 @@
         letter-spacing: 0.03em;
     }
 }
+
+@include mq (tablet-only) {
+    &__item:nth-child(-n+2) {
+        margin-bottom: 30px;
+    }
+}
+
 

@@ -1,5 +1,7 @@
 @import "./variables/variables" ;
 
+@import "./variables/mixins";
+
 @import "./base/base" ;
 
 @import "./components/btn";
@@ -7,8 +9,6 @@
 @import "./components/menu-btn";
 
 @import "./components/mobile-menu";
-
-@import "./variables/mixins" ;
 
 @import "./components/container";
 
