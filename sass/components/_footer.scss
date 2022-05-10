@@ -80,16 +80,31 @@
         padding-left: 16px;
         padding-top: 15px;
         padding-bottom: 15px;
-        margin-right: 12px;
+        margin-bottom: 20px;
         min-width: 358px;
         min-height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        width: 358px;
+        
         background-color: var(--black-fon);
         cursor: pointer;
         color: rgba(255, 255, 255, 0.6);
+    }
+
+    @include mq (tablet) {
+        &__input {
+            
+            min-width: 450px;
+            width: 450px;
+        }
+    }
+    @include mq (desktop) {
+        &__input {
+            margin-right: 12px;
+            min-width: 358px;
+            width: 358px;
+         }
     }
     
     &__icon {
@@ -100,7 +115,20 @@
         height: 24px;
         cursor: pointer;
     }
+    &__first {
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    &__second {
+        text-align: center;
+        padding-bottom: 60px;
+    }
 
+    &__third {
+        text-align: center;
+    }
+
+    @include mq (desktop) {
     &__first {
         list-style: none;
         margin-right: 70px;
@@ -108,26 +136,36 @@
     
     &__second {
         list-style: none;
-        margin-right: auto;
+        margin-right: 93px;
     }
     
     &__third {
         margin-right: 0;
+    }
     }
 
     &__input:focus {
         outline: transparent;
         background: transparent;
     }
+
+    @include mq (tablet) {
+    &__div {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    }
 }
 
+@include mq (desktop) {
 .footer .container {
     display: flex;
     align-items: baseline;
 
     
 }
-
+}
 .subscribe {
     display: flex;
     justify-content: center;
