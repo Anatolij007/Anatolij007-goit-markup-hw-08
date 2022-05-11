@@ -1499,8 +1499,17 @@ img {
 /* Основа */
 .foundation__list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1200px) {
+  .foundation__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .foundation__item {
