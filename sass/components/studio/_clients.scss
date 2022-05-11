@@ -7,7 +7,7 @@
     letter-spacing: 0.03em;
     color: var(--black-text) ;
 
-    @include mq (tablet-only) {
+    @include mq (desktop) {
         font-size: 36px;
 
     }

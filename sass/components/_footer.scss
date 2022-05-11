@@ -35,6 +35,20 @@
         color: var(--wgt-text);
     }
 
+    &__address-text {
+    display: inline-block;
+        margin-bottom: 9px;
+    
+        font-family: var(--main-font);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+
     &__mail {
         display: block;
         margin-bottom: 9px;
@@ -81,8 +95,8 @@
         padding-top: 15px;
         padding-bottom: 15px;
         margin-bottom: 20px;
-        min-width: 358px;
-        min-height: 50px;
+        width: 100%;
+        
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -94,8 +108,6 @@
 
     @include mq (tablet) {
         &__input {
-            
-            min-width: 450px;
             width: 450px;
         }
     }
@@ -115,19 +127,41 @@
         height: 24px;
         cursor: pointer;
     }
+
+    @include mq (mobile-only) {
     &__first {
-        text-align: center;
-        padding-bottom: 60px;
-    }
-    &__second {
-        text-align: center;
-        padding-bottom: 60px;
+            text-align: center;
+            padding-bottom: 60px;
+        }
+    
+        &__second {
+            text-align: center;
+            padding-bottom: 60px;
+        }
+    
+        &__third {
+            text-align: center;
+        }
+
     }
 
-    &__third {
-        text-align: center;
-    }
-
+        @include mq (tablet-only) {
+            &__first {
+                text-align: center;
+                padding-bottom: 60px;
+            }
+    
+            &__second {
+                text-align: center;
+                padding-bottom: 60px;
+            }
+    
+            &__third {
+                text-align: center;
+            }
+    
+        }
+    
     @include mq (desktop) {
     &__first {
         list-style: none;
@@ -161,7 +195,7 @@
 @include mq (desktop) {
 .footer .container {
     display: flex;
-    align-items: baseline;
+    // align-items: baseline;
 
     
 }
@@ -194,5 +228,13 @@
     &__item:hover,
     &__item:focus {
         background-color: var(--blue-text);
+    }
+}
+
+.subscribe__form {
+    @include mq (tablet-only) {
+        display: flex;
+        flex-direction: column;
+
     }
 }
