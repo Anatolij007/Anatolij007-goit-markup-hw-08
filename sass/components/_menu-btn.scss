@@ -8,7 +8,7 @@
     border: none;
     outline: transparent;
     cursor: pointer;
-    z-index: 99;
+    z-index: 5;
     transition: color var(--anim-spb);
 
     &:hover &__icon-open,
