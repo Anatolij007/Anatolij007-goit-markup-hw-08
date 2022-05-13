@@ -38,6 +38,10 @@
     border-radius: 4px;
     padding: 40px;
 
+    @include mq (mobile-only) {
+        top: 55%;
+    }
+
     &__close {
         transform: fill var(--anim-spb);
     }
