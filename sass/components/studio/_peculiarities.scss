@@ -91,6 +91,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
+    @include mq (mobile-only) {
+        text-align: center;
+    }
+
+
     &__text {
         color: var(--grey-text);
         font-family: var(--main-font);
@@ -104,6 +109,7 @@
 @include mq (tablet-only) {
     &__item:nth-child(-n+2) {
         margin-bottom: 30px;
+        
     }
 }
 

@@ -7,6 +7,10 @@
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
 
+    @include mq (tablet) {
+            flex-grow: 1;
+        }
+
     &__headline {
         font-family: var(--main-font);
         color: var(--black-text);
@@ -15,9 +19,7 @@
         line-height: 2;
         letter-spacing: 0.06em;
     
-        @include mq (tablet-only) {
-        font-size: 17px;
-        }
+        
     }
 
     &__txt {
