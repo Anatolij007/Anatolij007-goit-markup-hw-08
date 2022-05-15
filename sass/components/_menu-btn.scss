@@ -8,7 +8,7 @@
     border: none;
     outline: transparent;
     cursor: pointer;
-    z-index: 25;
+    z-index: 11;
     transition: color var(--anim-spb);
 
     &:hover &__icon-open,
@@ -20,6 +20,7 @@
         opacity: 1;
         fill: var(--main-text);
         transition: opacity var(--anim-spb), fill var(--anim-spb);
+        z-index: 11;
     }
 
     &.is-active &__icon-close {

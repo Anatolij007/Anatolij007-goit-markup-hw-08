@@ -201,7 +201,7 @@ img {
   border: none;
   outline: transparent;
   cursor: pointer;
-  z-index: 25;
+  z-index: 11;
   transition: color var(--anim-spb);
 }
 
@@ -214,6 +214,7 @@ img {
   opacity: 1;
   fill: var(--main-text);
   transition: opacity var(--anim-spb), fill var(--anim-spb);
+  z-index: 11;
 }
 
 .menu-btn.is-active .menu-btn__icon-close {
@@ -724,7 +725,7 @@ img {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 10;
+  z-index: 12;
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
@@ -755,6 +756,12 @@ img {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .modal {
+    padding: 30px;
+  }
+}
+
 .modal__close {
   transform: fill var(--anim-spb);
 }
@@ -779,6 +786,12 @@ img {
   color: var(--black-text);
 }
 
+@media screen and (max-width: 480px) {
+  .form__text {
+    font-size: 15px;
+  }
+}
+
 .form__label {
   position: relative;
   display: flex;
@@ -788,6 +801,12 @@ img {
   letter-spacing: 0.01em;
   margin-bottom: 10px;
   color: var(--grey-text);
+}
+
+@media screen and (max-width: 480px) {
+  .form__label {
+    font-size: 11px;
+  }
 }
 
 .form__label:nth-child(5) {
@@ -806,6 +825,12 @@ img {
   border-radius: 4px;
   cursor: pointer;
   transition: border var(--anim-spb);
+}
+
+@media screen and (max-width: 480px) {
+  .form__textarea {
+    height: 100px;
+  }
 }
 
 .form__input {
@@ -842,12 +867,18 @@ img {
   display: block;
   margin-top: 20px;
   margin-bottom: 30px;
-  text-align: right;
   padding-right: 11px;
   padding-left: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--grey-text);
+}
+
+@media screen and (max-width: 480px) {
+  .check {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .check__input {
