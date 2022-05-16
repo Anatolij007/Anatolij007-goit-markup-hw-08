@@ -860,45 +860,45 @@ img {
   fill: var(--blue-text);
 }
 
-.modal-form__label-condition {
+.check {
   flex-wrap: wrap;
   gap: 5px;
   align-items: center;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--grey-text);
 }
 
 @media screen and (min-width: 1200px) {
-  .modal-form__label-condition {
+  .check {
     font-size: 13px;
     line-height: 1.17;
   }
 }
 
-.modal-form__check-input {
+.check__input {
   -webkit-appearance: none;
   appearance: none;
   position: absolute;
 }
 
-.modal-form__check-icon {
+.check__text {
   display: inline-block;
   width: 16px;
   height: 16px;
-  border: 2px solid #000000;
+  border: 2px solid var(--black-text);
   border-radius: 4px;
   box-sizing: border-box;
   margin-right: 8px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--anim-spb);
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
 }
 
 @media screen and (min-width: 1200px) {
-  .modal-form__check-icon {
+  .check__text {
     font-size: 14px;
   }
 }
@@ -918,7 +918,7 @@ img {
   }
 }
 
-.modal-form__check-input:checked + .modal-form__check-icon {
+.check__input:checked + .check__text {
   background-color: var(--blue-text);
   background-image: url(../images/done.svg);
   background-size: cover;
@@ -927,7 +927,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.modal-form__check-input:focus + .modal-form__check-icon {
+.check__input:focus + .check__text {
   outline: 0;
   outline-offset: 0;
   border-color: var(--blue-text);
