@@ -190,7 +190,7 @@
                 placeholder="Введите текст"
               ></textarea>
             </label>
-            <label class="check">
+            <!-- <label class="check">
               <input class="check__input" name="checkbox" type="checkbox" />
               <span class="check__box"></span>
               <svg class="check__icon" width="16" height="15">
@@ -198,7 +198,22 @@
               </svg>
               <span class="check__text">Соглашаюсь с рассылкой и принимаю</span>
               <a class="check__link" href="">Условия договора</a>
+            </label> -->
+            <label class="modal-form__label-condition" for="condition">
+              <input
+                class="modal-form__check-input check-condition"
+                type="checkbox"
+                name="condition"
+                value="condition"
+                id="condition"
+              />
+              <span class="modal-form__check-icon checkbox-icon"></span>
+
+              Соглашаюсь с рассылкой и принимаю<a class="check__link" href=""
+                >Условия договора</a
+              >
             </label>
+
             <button type="submit" class="check__button">Отправить</button>
           </form>
         </div>
